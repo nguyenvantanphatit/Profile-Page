@@ -1,0 +1,38 @@
+.header-bar {
+  background-color: #ffffff;
+}
+
+.header-bar-2 {
+  margin-top: 2%;
+}
+.header-bar-1 h3{
+  font-size: 1.5vw;
+}
+.typing-text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2vw;
+  animation: typing 4s steps(14) infinite alternate,
+    blink 0.4s step-end infinite alternate;
+  text-shadow: 0px 0px 3px white;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  .typing-text {
+    font-size: 6vw;
+  }
+}

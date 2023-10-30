@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Image } from 'antd';
-import Invoice_1 from '../../Img/invoice_1.svg';
+import Invoice_1 from '../../img/Hotel_management.svg';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../../src/firebase';
 import './InvoiceForm.css';

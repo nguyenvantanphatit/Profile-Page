@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.header-1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+
+.header-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-2 p {
+  font-size: 24px;
+  color: #000000;
+  margin: 0 3%;
+}
+.header-2 p:hover {
+  font-size: 24px;
+  color: red;
+}
+

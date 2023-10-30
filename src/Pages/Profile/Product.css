@@ -1,0 +1,64 @@
+.product {
+  background-color: #ffffff;
+  margin-top: 5%;
+}
+.product h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+.product h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: red;
+}
+.anticon {
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s;
+  padding: 0 10px;
+}
+.custom-timeline {
+  width: 100%;
+  padding: 0 25%;
+  margin-top: 5%;
+}
+.img-product {
+  width: 99%;
+  height: 350px;
+  object-fit: fill;
+}
+
+@media (max-width: 1024px) {
+  .custom-timeline {
+    width: 100%;
+    padding: 0;
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-timeline {
+    width: 100%;
+    padding: 0;
+    object-fit: fill;
+  }
+  .img-product {
+    width: 99%;
+    height: 200px;
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 426px) {
+  .custom-timeline {
+    width: 100%;
+    padding: 0;
+    object-fit: fill;
+  }
+  .img-product {
+    width: 99%;
+    height: 200px;
+    object-fit: fill;
+  }
+}
