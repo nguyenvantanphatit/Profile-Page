@@ -14,7 +14,7 @@ const Profile: React.FC = () => {
     return (
         <>
             <Layout className='layout'>
-            <PortfolioHeader />
+                <PortfolioHeader />
                 <HeaderBar />
                 <About />
                 <Product />

@@ -4,13 +4,10 @@ import './PortfolioHeader.css'
 const PortfolioHeader: React.FC = () => {
     return (
         <Row gutter={24} className='header'>
-            <Col xl={16} lg={24} md={8} xs={24} className='header-1'>
-                <p>Tan Phat</p>
-            </Col>
-            <Col xl={8} lg={24} md={8} xs={24} className='header-2'>
-                <p>Home</p>
-                <p>About</p>
-                <p>Projects</p>
+            <Col xl={24} lg={24} md={8} xs={24} className='header-2'>
+                <h3>Home</h3>
+                <h3>About</h3>
+                <h3>Projects</h3>
             </Col>
         </Row>
     );

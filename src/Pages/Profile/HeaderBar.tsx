@@ -7,8 +7,11 @@ const HeaderBar: React.FC = () => {
         <>
             <Row className="header-bar">
                 <Col span={16} xl={16} lg={24} md={8} xs={24} className="header-bar-1">
-                    <h3> Hi, my name is  Tan Phat</h3>
-                    <h2 className="typing-text">I'm Front-end Developer</h2>
+                    <div className="flip">
+                        <div><div>Hi, my name is</div></div>
+                        <div><div>Tan Phat</div></div>
+                        <div><div>I'm Front-end Developer</div></div>
+                    </div>
                 </Col>
                 <Col span={8} xl={8} lg={24} md={8} xs={24} className="header-bar-2">
                     <Image src={Profile} className="about-img" preview={false} />

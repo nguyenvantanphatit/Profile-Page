@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Input, Button, Row, Col } from "antd";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
 import "./Contact.css";
 import TextArea from "antd/es/input/TextArea";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact: React.FC = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -24,13 +25,16 @@ const Contact: React.FC = () => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     };
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
         <>
-            <div className="contact-desc">
+            <div className="contact-desc" data-aos="fade-left">
                 <h3>Contact</h3>
                 <h4>Get In Touch</h4>
             </div>
-            <Row className="contact-container">
+            <Row className="contact-container" data-aos="fade-left">
                 <Col span={12} xl={12} lg={12} md={12} xs={24}>
                     <Form
                         onFinish={handleSubmit}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col } from 'antd';
 import Js from '../../img/js.png'
 import ts from '../../img/ts.png'
@@ -16,7 +16,9 @@ import mysql from '../../img/mysql.png'
 import gitblab from '../../img/gitlab.png'
 import reactjs from '../../img/reactjs.png'
 import redux from '../../img/redux.png'
-
+import firebase from '../../img/firebase.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './About.css'
 
 const About: React.FC = () => {
@@ -31,15 +33,19 @@ const About: React.FC = () => {
         { src: node, alt: 'NodeJs' },
         { src: mysql, alt: 'MYSQL' },
         { src: database, alt: 'MongoDB' },
+        { src: firebase, alt: 'Firebase' },
         { src: antd, alt: 'Ant Design' },
         { src: api, alt: 'Api' },
+    ];
+    const tools = [
         { src: github, alt: 'Github - Git' },
         { src: postman, alt: 'Postman' },
         { src: sourcetree, alt: 'SourceTree' },
         { src: gitblab, alt: 'GitLab' },
-
     ];
-
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
         <div>
             <Row className='about'>
@@ -47,15 +53,31 @@ const About: React.FC = () => {
                     <div className='skill'>
                         <h3>My Skills</h3>
                         <h4>I like to take responsibility to craft aesthetic user experience using modern frontend architecture</h4>
-                        <h3>FRAMEWORKS LANGUAGES TOOLS</h3>
+                        <h3>FRAMEWORKS AND LANGUAGES</h3>
                     </div>
                 </Col>
                 <Col span={24} xl={24} lg={24} md={8} xs={24} className='about-2'>
-                    <Row>
+                    <Row data-aos="fade-left">
                         {skills.map((skill) => (
                             <Col xl={3} lg={24} md={12} xs={12} key={skill.src}>
                                 <p className="centered-text">
-                                    <img src={skill.src} alt={skill.alt} className="centered-img" /> {skill.alt}
+                                    <img src={skill.src} alt={skill.alt} className="centered-img" /><h5>{skill.alt}</h5>
+                                </p>
+                            </Col>
+                        ))}
+                    </Row>
+                </Col>
+                <Col span={24} xl={16} lg={24} md={8} xs={24} className='about-2'>
+                    <div className='skill'>
+                        <h3>TOOLS</h3>
+                    </div>
+                </Col>
+                <Col span={24} xl={24} lg={24} md={8} xs={24} className='about-2'>
+                    <Row data-aos="fade-left">
+                        {tools.map((skill) => (
+                            <Col xl={3} lg={24} md={12} xs={12} key={skill.src}>
+                                <p className="centered-text">
+                                    <img src={skill.src} alt={skill.alt} className="centered-img" /><h5>{skill.alt}</h5>
                                 </p>
                             </Col>
                         ))}
