@@ -11,12 +11,12 @@
   justify-content: end;
 }
 
-.header-2 h3 {
+.header-2 a{
   font-size: 24px;
   color: #000000;
   margin: 0 2%;
 }
-.header-2 h3:hover {
+.header-2 a:hover {
   font-size: 24px;
   color: red;
 }

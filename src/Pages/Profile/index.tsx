@@ -7,7 +7,7 @@ import HeaderBar from './HeaderBar';
 import About from './About';
 import './index.css';
 import PortfolioHeader from './PortfolioHeader';
-
+import BackToTop from './BackToTop'
 const Profile: React.FC = () => {
 
 
@@ -20,6 +20,7 @@ const Profile: React.FC = () => {
                 <Product />
                 <Contact />
                 <CustomFooter />
+                <BackToTop />
             </Layout >
         </>
     );

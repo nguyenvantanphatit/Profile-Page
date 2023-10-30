@@ -20,7 +20,6 @@ const CustomFooter = () => {
                 </h2>
             </div>
             <div className="footer">
-
                 <div className="content">
                     <div className="services">
                         <h4>Services</h4>

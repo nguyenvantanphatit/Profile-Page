@@ -60,7 +60,7 @@ const Product: React.FC = () => {
   }, []);
   return (
     <>
-      <div className="product" data-aos="fade-right">
+      <div className="product" data-aos="fade-right" id='product'>
         <h3>My Projects</h3>
         <h4>
           I've built with love, expertise and a pinch of magical ingredients.

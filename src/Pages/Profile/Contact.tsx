@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
       }, []);
     return (
         <>
-            <div className="contact-desc" data-aos="fade-left">
+            <div className="contact-desc" data-aos="fade-left" id='contact'>
                 <h3>Contact</h3>
                 <h4>Get In Touch</h4>
             </div>
