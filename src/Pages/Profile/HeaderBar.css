@@ -53,3 +53,21 @@
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
 }
+
+@media (max-width: 1024px) {
+  .flip {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flip {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  .flip {
+    font-size: 16px;
+  }
+}
