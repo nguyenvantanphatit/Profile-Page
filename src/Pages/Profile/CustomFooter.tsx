@@ -8,8 +8,8 @@ const CustomFooter = () => {
     const socialMediaData = [
         { name: "Linkedin", link: "https://www.facebook.com/tanphat05062001" },
         { name: "Facebook", link: "https://www.facebook.com/tanphat05062001" },
-        {  name: "Github", link: "https://github.com/nguyenvantanphatit" },
-        {  name: "Instagram", link: "https://www.instagram.com/tannnphatttttttt/" },
+        { name: "Github", link: "https://github.com/nguyenvantanphatit" },
+        { name: "Instagram", link: "https://www.instagram.com/tannnphatttttttt/" },
     ];
     const quickLinksData = ["Home", "About", "Blogs", "Contact"];
     return (
@@ -34,7 +34,7 @@ const CustomFooter = () => {
                         {socialMediaData.map((social, index) => (
                             <h5 key={index}>
                                 <a href={social.link}>
-                                   {social.name}
+                                    {social.name}
                                 </a>
                             </h5>
                         ))}
@@ -48,15 +48,13 @@ const CustomFooter = () => {
                         ))}
                     </div>
                     <div className="details">
-                        <h4 className="address">Address</h4>
+                        <h4 className="Information">Information</h4>
                         <h5>
                             District 12, Ho Chi Minh City
                         </h5>
-                        <h4 className="mobile">Phone</h4>
                         <h5>
                             <a href="#">037 422 5294</a>
                         </h5>
-                        <h4 className="mail">Email</h4>
                         <h5>
                             <a href="#">nguyenvantanphat.it@gmail.com</a>
                         </h5>

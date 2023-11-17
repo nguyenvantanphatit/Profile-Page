@@ -14,7 +14,7 @@ const cardData: CardData[] = [
     title: "Dohbo Janpan(8/2023 - 10/2023)",
     imageSrc: Card_3,
     content: "Angular",
-    desc: "Create Campaign Normal, Lottery, Mileage",
+    desc: "Create Campaign Normal, Lottery, Mileage used to advertise on websites or QR code printed products",
     link: "https://www.exc-dmk.co.jp/lp_dohbo_wp.html",
   },
   {
@@ -22,7 +22,7 @@ const cardData: CardData[] = [
     title: "Viet Japan Digital Connect Platform(6/2023 - 7/2023)",
     imageSrc: Card_1,
     content: "ReactJs (JavaScript), Antd, NodeJS, MySQL",
-    desc: "Connecting events for Japanese businesses using English, Vietnamese and Japanese",
+    desc: "An event connection website for Japanese and Vietnamese businesses. Allows businesses that want to post company information to connect with each other to increase development and promote cooperation between the two countries using English, Vietnamese and Japanese languages.",
     link: "https://vjp-connect.com",
   },
   {
@@ -31,14 +31,14 @@ const cardData: CardData[] = [
     imageSrc: Card_2,
     content: "ReactJs (TypeScript), Firebase, Antd, PayPal",
     desc: "Booking Hotel Management use payment PayPal",
-    link: "https://tanphat-profile.netlify.app/",
+    link: "https://booking-hotel-management.netlify.app/",
   },
   {
     id: 4,
     title: "Profile (3/2023)",
     imageSrc: Card_4,
     content: "ReactJs, Antd",
-    desc: "123",
+    desc: "Personal website to introduce skills and work experience during work",
     link: "https://tanphat-profile.netlify.app/",
   },
 ];
@@ -66,7 +66,7 @@ const Product: React.FC = () => {
           I've built with love, expertise and a pinch of magical ingredients.
         </h4>
       </div>
-      <Row gutter={[16,32]} data-aos="fade-right">
+      <Row gutter={[16, 32]} data-aos="fade-right">
         {cardData.map((card, index) => (
           <Col xl={6} lg={12} md={12} xs={24}>
             <Card title={card.title} key={index}>
@@ -93,7 +93,8 @@ const Product: React.FC = () => {
           style={{ width: "100%" }}
         />
         <h5>Desc: {selectedCard?.desc}</h5>
-        <h5>Link: {selectedCard?.link}</h5>
+        <h5>Tech: {selectedCard?.content}</h5>
+        <a href={selectedCard?.link}>{selectedCard?.link}</a>
       </Modal>
     </>
   );

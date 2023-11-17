@@ -1,6 +1,6 @@
 .product {
   background-color: #ffffff;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .product h4{
   font-size: 1.2rem;
@@ -22,16 +22,7 @@
 .img-product {
   width: 100%;
   object-fit: cover;
+  height: 150px;
 }
 
-@media (max-width: 1024px) {
- 
-}
 
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 426px) {
-  
-}
